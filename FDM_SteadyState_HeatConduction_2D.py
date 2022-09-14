@@ -112,11 +112,11 @@ elif choice == 3:   # Point Succesive Over & Under Relaxation Method
 print(T)
 fig1, ax1 = plt.subplots(1, 1, figsize=(6, 6))
 # fig.tight_layout()
-ax1.contour(xx, yy, T)
+cont = ax1.contour(xx, yy, T)
 ax1.set_title('Temperature Distribution contour on the plate')
 ax1.set_xlabel(r'$X\longrightarrow$')
 ax1.set_ylabel(r'$Y\longrightarrow$')
-
+fig1.colorbar(cont)
 
 fig2, ax2 = plt.subplots(1, 1, figsize=(6, 6))
 # fig.tight_layout()
